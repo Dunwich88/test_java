@@ -1,5 +1,7 @@
 package ru.stqa.pft.sandbox;
 
+import java.util.concurrent.RecursiveAction;
+
 /*
 AHAHAHA MEMASIKI PODKATILI
  */
@@ -9,32 +11,24 @@ public class MyFirstProgram {
         hello("ПИДАРАСИНА");
         hello("Moherfucker");
 
+        Square s = new Square(5);
+        System.out.println("Square area with side " + s.l + " = " + area(s));
 
-        double l = 5;
-        System.out.println("Square's area with side " + l + " = " + area(l));
-
-        double a = 4;
-        double b = 10;
-
-        System.out.println("Area with sides " + a + " and " + b + " = " + area(a, b));
+        Rectangle r = new Rectangle(4, 10);
+        System.out.println("Rectangle area with sides " + r.a + " and " + r.b + " = " + area(r));
 
     }
 
     public static void hello(String somebody) {
-
         System.out.println("Howdy, " + somebody + "!");
-
     }
 
-    public static double area(double len) {
-
-        return len * len;
-
+    public static double area(Square s) {
+        return s.l * s.l;
     }
 
-    public static double area(double a, double b) {
-
-        return a * b;
+    public static double area(Rectangle r) {
+        return r.a * r.b;
     }
 }
 
