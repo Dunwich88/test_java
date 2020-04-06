@@ -12,10 +12,10 @@ public class MyFirstProgram {
         hello("Moherfucker");
 
         Square s = new Square(5);
-        System.out.println("Square area with side " + s.l + " = " + area(s));
+        System.out.println("Square area with side " + s.l + " = " + s.area());
 
         Rectangle r = new Rectangle(4, 10);
-        System.out.println("Rectangle area with sides " + r.a + " and " + r.b + " = " + area(r));
+        System.out.println("Rectangle area with sides " + r.a + " and " + r.b + " = " + r.area());
 
     }
 
@@ -23,12 +23,8 @@ public class MyFirstProgram {
         System.out.println("Howdy, " + somebody + "!");
     }
 
-    public static double area(Square s) {
-        return s.l * s.l;
-    }
-
-    public static double area(Rectangle r) {
-        return r.a * r.b;
-    }
+   /* public static double distance(Point p1, Point p2) {
+        return Math.sqrt((Math.pow(2, (p2 - p1)) + Math.pow(2, (p2 - p1)));
+    } */
 }
 
