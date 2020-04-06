@@ -23,8 +23,5 @@ public class MyFirstProgram {
         System.out.println("Howdy, " + somebody + "!");
     }
 
-   /* public static double distance(Point p1, Point p2) {
-        return Math.sqrt((Math.pow(2, (p2 - p1)) + Math.pow(2, (p2 - p1)));
-    } */
 }
 
